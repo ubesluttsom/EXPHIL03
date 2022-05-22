@@ -1,0 +1,256 @@
+\documentclass[a4paper,norsk]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[main=norsk,english]{babel}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage[colorlinks]{hyperref}
+\usepackage[nameinlink]{cleveref}
+\usepackage{comment}
+\usepackage[hang, symbol]{footmisc}
+
+\usepackage[backend=biber,style=authoryear-ibid]{biblatex}
+\addbibresource{ref.bib}
+\usepackage{csquotes}
+\SetCiteCommand{\parencite}
+\renewcommand{\mkccitation}[1]{ #1}
+
+\title{\sf Semesteroppgave \par {\large EXPHIL03 22V\par}}
+\author{\sf Kandidatnummer: 4684}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{\normalsize\sf%
+  Drøft Streets argumentasjon for at moralske verdier er sinnsavhengige. Andre
+  tekster som kan trekkes inn inkluderer Dawkins' \emph{Det egoistiske genet}
+  og Kants \emph{Grunnlegging av moralens metafysikk}. [Antall ord i teksten:
+  \input{word-count.txt}.]
+}
+
+Jeg syntes det er vanskelig å finne åpenbare logiske feil i argumentasjonen til
+Street. Under vil jeg hovedsaklig bryte den ned, men jeg nevner også en
+kantiansk innvending, og kort undrer meg over normative følger.
+
+Argumentasjonskjeden i teksten kan oppsummeres slik \autocite{street}:
+
+%\labelcrefname{enumi}{punkt}{punkter}
+\labelcrefformat{enumi}{#2{\itshape#1.}#3}
+\labelcrefformat{enumii}{#2{\itshape#1.}#3}
+\crefdefaultlabelformat{#2(#1)#3}
+
+\begin{enumerate}
+\def\labelenumi{\itshape\oldstylenums{\arabic{enumi}.}}
+\def\labelenumii{\itshape\alph{enumii}.}
+\item\label{1}
+  Opprinnelsen, \emph{genealogien}, til en oppfatning er viktig for ha kunnskap
+  om ting.
+\item\label{2}
+  Opprinnelsen kan forsterke eller undergrave, avhengig av kontekst.
+\item\label{3}
+  Mennesker har noen grunnverdier, \emph{psykologiske trekk}, som
+  stammer fra biologisk evolusjon, siden disse promoterer overlevelse.
+\item\label{4}
+  For å finne ut om evolusjonsopprinnelsen til verdiene våre forsterker
+  eller undergraver oppfatningen vår, setter vi opp følgende dikotomi:
+
+  \begin{enumerate}
+  \item\label{4a}
+    Ting har verdi enten fordi vi verdsetter dem
+    (\emph{sinnsavhengige}),
+  \item\label{4b}
+    eller fordi de har verdi i seg selv, uavhengig av noens vurdering
+    (\emph{sinnsuavhengige}).
+  \end{enumerate}
+\item\label{5}
+  Hvis verdier er sinnsuavhengige (altså at de kan være sanne uavhengig av vår
+  vurdering), forsterker ikke den evolusjonære opprinnelsen til oppfatningene
+  våre deres «verdimessige sannhet», ettersom evolusjon ikke nødvendigvis
+  selekterer for sanne oppfatninger.
+
+  \begin{enumerate} \item\label{5a} Hvis verdier har verdi fordi vi bestemmer
+    at de har det, er ikke opprinnelsen til verdiene problematisk. Fra
+    \labelcref{3} og \labelcref{4a} \item\label{5b} Hvis det finnes moralske
+    sannheter som vi ikke er i stand til å fatte, kan vi ikke vite om vi lever
+riktig. Fra \labelcref{3} og \labelcref{4b} \end{enumerate} \item\label{6}
+Konklusjonen i \labelcref{5b} er gyldig, men virker så usannsynlig at et av
+premissene bør forkastes. Evolusjonsteorien \labelcref{3} kan ikke forkastes
+\autocite[jf.][]{dawkins}, dermed må \emph{sinnsuavhengige verdier}
+\labelcref{4b} være feil.  \end{enumerate}
+
+Jeg antar at Street i \labelcref{1}~og \labelcref{2}~tar utgangspunkt i en
+tradisjonell definisjon av kunnskap: en velbegrunnet, sann, overbevisning ---
+hvis et av disse tre kravene ikke gjelder, har man ikke kunnskap
+\autocite[87]{wikforss}. Hvis man argumenterer for at et av disse kravene
+\emph{aldri} gjelder, må en regnes som \emph{skeptiker}
+\autocite[90]{wikforss}. Det siste er hva Streets argumentasjon i
+\labelcref{5} er et forsøk på: å undergrave \emph{evidensen}, eller
+\enquote{velbegrunnetheten}, for vår moralkunnskap, og dermed vise at dette
+fører til en \enquote{global verdimessig skepsis} \autocite[451]{street}, eller
+\emph{moralsk skeptisisme}.
+
+Street forkaster moralsk skeptisisme (konklusjonen \labelcref{5b}) på bakgrunn
+av at synet på ingen måte er beskrivende for hvordan vi lever.  Hen beskriver
+det som lite plausibelt om vår medføtte intuisjon villeder oss: om vi
+aksepterer en \enquote{global verdimessig skepsis} kan vi like gjerne
+\textcquote[451]{street}{leve livet ved å skrike hele tiden, ved å slå hjul,
+eller [...] andre ting}. Det virker som Street er av en flere som ser dette
+synet som så absurd at ethvert argument som leder hit må forkastes
+\autocite{sep-skepticism-moral}. Jeg vil påpeke at jeg tror man kan være et
+helt ålreit, moralsk (i folkelig betydning), menneske og likevel være en
+moralsk skeptiker; du bare simpelthen anerkjenner at du ikke har god evidens
+for dine moralske vurderinger, men du kan ha \emph{troa} på deres sannhet
+\autocite[for litt mer om dette se][]{sep-skepticism-moral}.
+
+Street tilbyr derimot en utvei i den alternative konklusjonen \labelcref{5a}
+Ved å akseptere denne --- at det ikke finnes objektive moralske fakta --- er
+man ikke lenger en moralsk skeptiker, man er en moralsk \emph{anti-realist}
+\autocite{sep-moral-anti-realism}. Dette er et snedig triks, vi forkaster altså
+ikke \emph{alle} moralske sannheter, men bare spesifikt de som blir undergravet
+av \labelcref{3}
+
+\subsubsection*{Kants innvending}
+
+Som nevnt i innledningen, syntes jeg det er utfordrende å finne gode
+innvendinger; argumentasjonen er god. Jeg skal ikke gjøre et forsøk, men jeg lar
+Kant prøve.
+
+Som en rasjonalist, mener Kant vi kan resonnere oss frem til universelle
+moralske dommer, som er uavhengige av noe menneskelig (eller antropologi, som
+han kaller det). Selv om Kant skriver lenge før Darwin og hans evolusjonslære,
+hevder han faktisk at «hvis nu naturens egentlige formål for et vesen, som har
+fornuft og vilje, var dets \emph{opprettholdelse}, at det skulle \emph{gå det
+vel}, med et ord dets \emph{lykke}, så ville å en ha innrettet seg meget dårlig
+hvis den hadde utsett seg denne skapnings fornuft til å virkeliggjøre denne
+hensikt.» \autocite[4:395]{kant} Han mener at \emph{instinkter} er mye mer
+effektive for lykke og overlevelse. Nøyaktig \emph{hva} er fornuften vår
+egentlig godt for? Vår bevissthet og rasjonalitet kan tidvis virke litt
+overflødig for ren overlevelse. Han står ved at moralske verdier har sitt
+utspring her, i fornuften.
+
+Er dette et godt motargument mot \labelcref{5}? Jeg sier nei. For det første,
+og mest relevant, virker rasjonalitet absolutt nyttig for å tilpasse oss
+miljøet; for mennesker, selvsagt, men også i begrenset kapasitet hos andre dyr.
+For det andre, Kants argument er teleologisk: vi har rasjonalitet \emph{for} å
+bruke den til å finne moralske sannheter \autocite[4:429]{kant}. Dette er et
+lite overbevisende eksistensgrunnlag; rasjonalitet som biologisk tilpasning
+virker mer sannsynlig.
+
+\subsubsection*{Konsekvenser}
+
+Street skriver avslutningsvis at våre mest grunnlegende verdier bør forbli
+uberørt av deres genealogiske opphav, det er vårt metaetiske perspektiv som må
+endres \autocite[453]{street}. Stemmer dette? Det er utenfor artikkelens
+omfang, men jeg undres om ikke Streets konklusjon også har \emph{normative}
+følger. Hvis vår biologiske utvikling er opphavet til våre verdier, bør vi da
+kanskje, f.eks, leve mer i henhold til den?
+
+\citeauthor{dawkins}, i sin utgreiing om evolusjon, er tydelig på at han ikke
+er interessert i en \enquote{moraloppfatning} basert på evolusjon, og advarer
+mot å leve etter \enquote{genenes lov om hensynsløs egoisme} \autocite[kap.
+1]{dawkins}\footnote{Det er verdt å merke seg at senere kapitler av den
+reviderte \emph{The Selfish Gene} diskuterer hvordan altruisme og samarbeid ---
+som tradisjonelt har høy moralsk verdi --- er en viktig årsak til menneskets
+suksess \autocite[kap. 12]{dawkins}, som er litt dissonant med dette.}. Han
+gjør et poeng ut av at det kanskje også er tilfredsstillende å overkomme våre
+naturlige tilbøyeligheter. Jeg er til stor grad enig, det er en feilslutning å
+tenke noe \emph{må} brukes til det det er `skapt' for.
+
+Jeg klarer likevel ikke la være å tenke at dette fordrer et antroposentrisk
+moralsyn. Hvis moralen likevel ikke er objektiv, den kommer fra oss selv,
+menneskene, virker det utfordrende å komme med gode argumenter for enten
+biosentriske eller universelle verdier. Det sagt, `P har verdi, fordi vi
+mennesker sier det' er ikke ekvivalent med `P har verdi for oss, fordi P er
+nyttig for oss mennesker' \autocite[338]{næss}, men det er uklart for meg hvor
+bevisbyrden ligger.
+
+\begin{comment}
+Begrepet \enquote{moral} blir, generelt sett, brukt på to forskjellige måter:
+\emph{beskrivende} og \emph{normativ} \autocite{sep-morality-definition}.
+Altså, bruker vi moral som en beskrivelse på hvordan vi allerede lever, eller
+som et normativt ideal om hvordan vi \emph{bør} leve? 
+
+Hen beholder \labelcref{5a} først og fremst
+fordi den \emph{er} beskrivende (nødvendigvis, om vi aksepterer \labelcref{3}).
+Hva Street egentlig ikke har tatt stilling til er om det finnes en
+\emph{normativ} moral. Finnes det en måte vi \emph{bør} leve på, som vi ikke
+nødvendigvis allerede gjør? Jeg føler derfor behovet for å plassere Street i en
+empirisk vitenskapelig tradisjon, sammen med antropologer, psykologer og
+biologer, som hovedsakelig er ute etter å beskrive menneskelig adferd, uten å
+diktere hvordan vi bør leve.
+\end{comment}
+
+\begin{comment}
+
+Å stille opp \emph{sinns\-avhengig} mot \emph{sinns\-uavhengig} som en dikotomi
+(enten eller) gir mening hvis man leter etter et beskrivende moralsystem, men
+fungerer ikke helt hvis man tillater begge deler. Hvorfor kan vi ikke akseptere
+en \enquote{global verdimessig skepsis} til normative ideer om hvordan vi bør
+leve, men hlhuluiyliuyioyuoi
+
+{\color{red}%
+  Lorem ipsum.
+}
+
+{\color{red}%
+  At noe har verdi fordi vi sier det er så, \emph{fiat}\footnote{Som i
+  \href{https://no.wikipedia.org/wiki/Fiat-penger}{fiat-penger}.}, leder kanskje
+  til en Stirnersk sopilistisk egoisme. Er dette problematisk?
+}
+
+\paragraph{\labelcref{4a} Bør omformuleres til et slags aksiom, eller en
+definisjon.}
+\end{comment}
+
+\begin{comment}
+Jeg oppfatter «moralske sannheter» heller som et definisjonsproblem.
+Vi leter etter et fast fundament å spikre verdi begrepet til. Jeg tror ikke
+\labelcref{4b} er feil fordi det er uforenelig med evolusjonsteori, men heller
+fordi det er håpløst vanskelig å definere begreper, her moral, uten en kontekst
+andre veldefinerte begreper; og da har man i realiteten bare forflyttet
+problemet. Alternativet, \labelcref{4b}, for meg er mye mer overbevisende siden
+det egentlig bare er et axiom, som også virker intuitivt. På samme måte sier vi
+at 1 + 1 = 2 er et axiom, fordi det virker opplagt selvforklarende, selv om vi
+ikke klarer å bevise det. At noe har verdi fordi vi sier at det har verdi er
+dessuten ganske vanskelig å motbevise.
+\end{comment}
+
+\begin{comment}
+Kant mener vi kan resonnere oss frem til universelle moralske dommer, som er
+uavhengige av noe menneskelig (eller antropologi, som han kaller det). Selv om
+Kant skriver lenge før Darwin og hans evolusjonsteori, hevder han faktisk at
+«hvis nu naturens egentlige formål for et vesen, som har fornuft og vilje, var
+dets \emph{opprettholdelse}, at det skulle \emph{gå det vel}, med et ord dets
+\emph{lykke}, så ville å en ha innrettet seg meget dårlig hvis den hadde utsett
+seg denne skapnings fornuft til å virkeliggjøre denne hensikt.»
+\autocite[4:395]{kant} Han mener at \emph{instinkter} er mye mer effektive for
+overlevelse. Nøyaktig \emph{hva} er fornuften vår egentlig godt for? Selv om
+dette lukter litt teleologi, har han et poeng i at vår bevissthet og
+rasjonalitet kan virke litt overflødig for ren overlevelse. Det kan være at
+rasjonalitet og bevissthet bare er en god overlevelsesstrategi; spesielt
+rasjonalitet virker nyttig for å tilpasse oss miljøet, men \emph{bevissthet}
+virker ... mer som en byrde heller enn et gode? Det finnes i dag ingen
+konsensus om hvorfor bevissthet eksisterer \autocite{sep-consciousness}. Om det
+er noe naturen har snublet over, eller er en konsekvens av en komplisert
+modellering av vår plass i omgivelsene våre \autocite[kap. 4]{dawkins}, er det
+tilsynelatende noe helt spesielt, og jeg finner det ikke umulig at moralske
+verdier kan ha sitt utspring her. Jeg kan for eksempel forestille meg at jeg
+kan dele moralske vurderinger med andre rasjonelle og bevisste vesener,
+uavhengig av biologi (eller mangel på biologi: kunstig intelligens).
+
+En mulig kritikk av en forestilling om delte moralske verdier med andre
+rasjonelle vesener, er at vi simpelthen menneskeliggjør alt som har
+rasjonalitet. De eneste tingene vi kjenner til i universet som har evnen til å
+filosofere er mennesker, og evolusjonen har selektert for at vi har sympati for
+mennesker. Med andre ord, våre moralske dommer over sinnstilstander, som å føle
+smerte og lidelse, er egentlig bare en tilpasning for å fungere i en sosial
+gruppe med andre vesener som evner å kommunisere sine egne preferanser; dette
+har alltid bare vært andre mennesker.
+\end{comment}
+
+\printbibliography
+
+\end{document}
